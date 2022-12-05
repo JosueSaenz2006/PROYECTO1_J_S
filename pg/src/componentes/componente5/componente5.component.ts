@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-componente5',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Componente5Component implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
-
+  navegacion(){
+    this.router.navigate([''])
+  }
+  navegacion1(){
+    this.router.navigate(['web2'])
+  }
+  navegacion2(){
+    this.router.navigate(['web3'])
+  }
+  navegacion3(){
+    this.router.navigate(['web4'])
+  }
+  navegacion4(){
+    this.router.navigate(['web5'])
+  }
+  navegacion5(){
+    this.router.navigate(['web6'])
+  }
 }

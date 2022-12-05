@@ -1,1 +1,158 @@
 <p>componente5 works!</p>
+<button (click)="navegacion()">PaginaPrincipal</button> 
+        <button (click)="navegacion2()">Hobes</button>
+        <button (click)="navegacion1()"> Gustos Musicales</button>
+        <button (click)="navegacion3()">PaginaPrincipal</button> 
+<div class="header">
+    <h2>Blog Name</h2>
+  </div>
+  
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Dec 7, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+      </div>
+      <div class="card">
+        <h2>TITLE HEADING</h2>
+        <h5>Title description, Sep 2, 2017</h5>
+        <div class="fakeimg" style="height:200px;">Image</div>
+        <p>Some text..</p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <div class="fakeimg" style="height:100px;">Image</div>
+        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      </div>
+      <div class="card">
+        <h3>Popular Post</h3>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div><br>
+        <div class="fakeimg">Image</div>
+      </div>
+      <div class="card">
+        <h3>Follow Me</h3>
+        <p>Some text..</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <h2>Footer</h2>
+  </div>
+
+  <head>
+    <style>
+      #train {
+        position: relative;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+  
+    <img id="train" src="https://js.cx/clipart/train.gif">
+  
+  
+    <script>
+      train.onclick = function() {
+        let start = Date.now();
+  
+        let timer = setInterval(function() {
+          let timePassed = Date.now() - start;
+  
+          train.style.left = timePassed / 5 + 'px';
+  
+          if (timePassed > 2000) clearInterval(timer);
+  
+        }, 20);
+      }
+    </script>
+  
+  
+  </body>
+
+
+ 
+
+  <!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
+
+
+  <script>
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 2000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>
+
+
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    progress {
+      width: 5%;
+    }
+  </style>
+  <script src="animate.js"></script>
+</head>
+
+<body>
+
+
+  <progress id="elem"></progress>
+
+  <script>
+    elem.onclick = function() {
+      animate({
+        duration: 1000,
+        timing: function(timeFraction) {
+          return timeFraction;
+        },
+        draw: function(progress) {
+          elem.style.width = progress * 100 + '%';
+        }
+      });
+    };
+  </script>
+
+
+</body>
+
+</html>
+
+
